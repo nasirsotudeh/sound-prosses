@@ -167,15 +167,15 @@ def fir_band_pass(samples, fs, fL, fH, NL, NH, outputType):
     return s
 
 
-####################################################################
-#مرحله اول
+##################################################################
+#first
 tStart=0
 tEnd=20
 #
 channels, nChannels, sampleRate, ampWidth, nFrames = extract_audio('monow/soot.wav', tStart, tEnd)
 samples = convert_to_mono(channels, nChannels, np.int16)
 #####################
-#shift
+#second
 samples_filtered = fir_band_pass(samples, sampleRate,0,44100,70,70, np.int16)
 samples_filtered = samples_filtered  # Sound amplification
 sampleRate +=15000
@@ -183,8 +183,8 @@ wavfile.write('soot15000.wav', sampleRate , samples_filtered)
 stshow('soot15000.wav')
 ######################################################################
 ######################################################################
-#مرحله دوم برای اعمال فیلتر حذف
-# channels, nChannels, sampleRate, ampWidth, nFrames = extract_audio('salam1+soot.wav', tStart, tEnd)
+#delete filter add
+# # channels, nChannels, sampleRate, ampWidth, nFrames = extract_audio('salam1+soot.wav', tStart, tEnd)
 # samples = convert_to_mono(channels, nChannels, np.int16)
 # lp_samples_filtered = fir_low_pass(samples, sampleRate, 70,461, np.int16)               # First pass
 # lp_samples_filtered = fir_low_pass(lp_samples_filtered, sampleRate, 70, 461, np.int16)   # Second pass
