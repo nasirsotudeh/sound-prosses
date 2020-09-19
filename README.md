@@ -1,4 +1,4 @@
-# sound-prosses
+# sound-prosses™
 ### Project Description: 
  The intention of this project is to record the sound and draw a diagram of its frequency range and then apply echo on the sound.
 And the frequency amplitude transmission and then the addition of the echo signal with the transmitted signal.
