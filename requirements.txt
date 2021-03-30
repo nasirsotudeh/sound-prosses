@@ -58,7 +58,7 @@ playsound==1.2.2
 prometheus-client==0.8.0
 prompt-toolkit==3.0.2
 pycparser==2.20
-Pygments==2.5.2
+Pygments==2.7.4
 pylint==2.4.3
 pyparsing==2.4.5
 pyrsistent==0.16.0
