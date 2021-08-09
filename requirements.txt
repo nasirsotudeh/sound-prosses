@@ -64,7 +64,7 @@ pyparsing==2.4.5
 pyrsistent==0.16.0
 python-dateutil==2.8.1
 pytz==2019.3
-pywin32==228
+pywin32==301
 pywinpty==0.5.7
 pyzmq==19.0.2
 requests==2.22.0
